@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verstka</title>
+    <link rel="stylesheet" href="img/logo1.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.warp{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: 'Rubik', sans-serif;
+margin-top: 30px;
+}
+.header{
+    width: 100%;
+    padding: 0 100px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.logo{
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    right: 10% ;
+
+}
+.mainRight{
+    position: relative;
+    left: 10%;
+    
+}
+
+.nav span{
+    margin: 0 20px;
+}
+.signIn{
+    background-color: transparent;
+    border: none;
+}
+.signUp{
+background-color: transparent;
+color: #F53855;
+border: 1px solid  #F53855;
+padding: 10px 20px;
+border-radius: 20px;
+margin-left: 10px; 
+}
+.signUp:hover{
+    transition: 0.2s;
+    background-color: #F53855;
+    color: white;
+}
+.main{
+    display: flex;
+    padding: 100px;
+    justify-content: flex-start;
+    width: 100%;
+}
+.mainBtn:hover{
+    transition: 0.2s;
+    background-color: white;
+    color: #F53855;
+}
+.mainLeft{
+    width: 50%;
+}
+p{
+    margin: 30px 0;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.mainBtn{
+    background-color: #F53855 ;
+    padding: 15px 65px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #F53855 ;
+    cursor:pointer;
+    
+}
+.au{
+    text-decoration: none;
+    color: white;
+}
+.stati{
+width: 80%;
+height: 200px;
+border-radius: 20px;
+display: flex;
+justify-content: space-around;
+box-shadow: 0 2px 10px #999;
+
+}
+.iteam{
+    width: 30%;
+     height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.iteamInner{
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.icon{
+    width: 15%;
+    height: 30%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+.p3{
+    width: 150%;
+    height: 150%;
+}
+.p15{
+    position: relative;
+   left: 16px;
+   bottom: 37px;
+}
+.p16{
+    position: relative;
+    left: 22px;
+    bottom: 37px;
+}
+.block{
+    position: relative;
+    left: 19px;
+    bottom: 37px;
+}
+.wrap2{
+    height: 80vh;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+ display: flex;
+}
+.rightq{
+    width: 50%;
+    
+}
+.pep4{
+    width: 400px;
+}
+.dddd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+.leftq{
+    width: 50%;
+    height: 70vh;
+   
+    display: flex;
+flex-direction: column;
+  margin-top: 150px ;
+}
+
+.v5{
+    width: 5%;
+    height:90vh;
+    
+}
+.h2{
+    font-size: 35px;
+    
+}
+.ty{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.v5{
+    width: 5%;
+    height: 70%;
+   
+    margin-top: 10px;
+}
+.minibox3{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.head2{
+    width: 40%;
+    height: 70%;
+   
+    position: relative;
+    top: 17%;
+
+}
+.fffff{
+    display: flex;
+}
+.j2{
+    font-size: 14px;
+}
+.j1{
+    position: relative;
+    bottom: 2%;
+}
+.j3{
+    position: relative;
+    top: 4%;
+}
+.wrap3{
+    width: 100%;
+    height: 40vh;
+   
+   margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.h2cho{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.lets{
+    font-size: 16px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+.wrap4{
+    width: 100%;
+    height: 140vh;
+ padding: 160px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+justify-content: space-around;
+align-items: center  ;
+}
+.ticket{
+    width: 300px;
+    height: 800px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid  #DDDDDD;
+}
+.ticket:hover{
+    transition: 0.2s;
+    border: 2px solid  #F53838;
+   
+}
+.ticket1{
+    width: 300px;
+    height: 800px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid  #F53838;
+}
+
+
+.ticketphoto{
+    width: 100%;
+    height: 30%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wow{
+    margin-top: 70px;
+    width: 120px;
+}
+.free{
+    width: 100%;
+    height: 5%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.freep{
+    font-family: 'Rubik', sans-serif;
+
+}
+.textticket{
+    width: 100%;
+    height: 40%;
+
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.textticket1{
+    width: 200px;
+    height: 150px;
+   
+}
+.hoi{
+    width: 100%;
+    height: 50px;
+ 
+    display: flex;
+ 
+    align-items: center;
+}
+.uuu{
+    color: green;
+}
+.unlimited{
+    position: relative;
+    left: 25px;
+}
+.freebtn{
+    width: 100%;
+    height: 10%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btnfreeee{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popw{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    color: #F53838;
+    font-size: 18px;
+    border: 2px solid #F53838;
+}
+.popw:hover{
+    transition: 0.2s;
+    color: white;
+    background-color: #F53838;
+}
+.popw1{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background:  #F53838;
+    color: #ffffff;
+    font-size: 18px;
+    border: 2px solid #F53838;
+    box-shadow: 0 30px 100px #ff6060;
+}
+.wrap5{
+    width: 100%;
+    height: 50vh;
+  text-align: center;
+  padding-top: 200px;
+
+}
+.wrap6{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.cartw{
+    width: 1200px;
+}
+.wrap7{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logod{
+    width: 1200px;
+}
+.storr{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.these{
+    margin-top: 20px;
+}
+.storr2{
+    width: 100%;
+    height: 50vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+}
+
+.kkk{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.cardadad{
+    width: 400px;
+    height: 250px;
+    border: 1px solid rgb(179, 177, 177);
+    border-radius: 10px;
+    padding: 20px;
+}
+.cardadad1{
+    width: 400px;
+    height: 250px;
+    border: 1px solid #F53855;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.cardTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cardTopLeft{
+    display: flex;
+}
+.photot{
+    width: 30px;
+    height: 30px;
+ 
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.star{
+    margin-bottom: 5px;
+}
+.ryt{
+    margin-right: 10px;
+}
+.userName{
+    margin-left: 20px;
+}
+.wrap8{
+    width: 100%;
+    height: 20vh;
+  
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+  
+  
+}
+
+.leftzu{
+    width: 50%;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+}
+.rightzu{
+    width: 50%;
+    height: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.boxqwe{
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #F53838;
+    margin-left: 25px;
+}
+.boxert{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #DDE0E4;
+    margin-left: 15px;
+}
+.boxbox{
+    width: 300px;
+    height: 40px;
+   
+    display: flex;
+    
+}
+.boxbox1{
+    width: 300px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.btnae{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #F53838;
+    margin-right: 20px;
+}
+.btnar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F53838 ;
+    border: none;
+    margin-right: 25px;
+}
+
+.wrap9{
+    width: 100%;
+    height: 60vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+  
+}
+.wrap10{
+    width: 100%;
+    height: 50%;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.luffy{
+width: 1100px;
+height: 233px;
+    background: #ffffff;
+border-radius: 8px;
+position: relative;
+bottom: 50%;
+box-shadow: 0 0 20px rgb(243, 243, 243);
+display: flex;
+}
+.leftluffy{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightluffy{
+    width: 50%;
+    height: 100%;
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bio{
+    width: 410px;
+height: 116px;
+
+margin-left: 50px;
+}
+.withq{
+    font-size: 16px;
+    color: #4F5665;
+font-family: 'Rubik', sans-serif;
+
+}
+.btnqert{
+    width: 250px;
+height: 60px;
+background: #F53838;
+border-radius: 8px;
+color: white;
+font-family: 'Rubik', sans-serif;
+margin-right: 60px;
+box-shadow: 0 30px 100px #ff6060;
+border: none;
+}
+h2{
+font-family: 'Rubik', sans-serif;
+
+}
+
+.wrap11{
+    width: 100%;
+    height: 60vh;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+.boxwrap11{
+    width: 1100px;
+    height: 270px;
+   
+    display: flex;
+    flex-direction: column;
+}
+.headwrap11{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    align-items: center;
+}
+.leftheadwrap11{
+    width: 50%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rightheadwrap11{
+    width: 50%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.VPNWER{
+    margin-left: 10px;
+    font-size: 20px;
+    position: relative;
+    top: 20%;
+}
+.ADA{
+    position: relative;
+    top: 20%;
+    font-size: 18px;
+}
+.body123{
+    width: 100%;
+    height: 100%;
+ 
+    display: flex;
+}
+.leftbody1{
+    width: 50%;
+    height: 100%;
+   
+}
+.rightbody1{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.boxbody123{
+    width: 350px;
+    height: 60px;
+   
+    margin-top: 20px;
+}
+.sociable{
+    width: 170px;
+    height: 40px;
+ 
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.fas{
+    margin-left: 20px;
+    box-shadow: 0 5px 10px gray;
+    border-radius: 50%;
+    
+}
+.fq{
+    box-shadow: 0 5px 10px gray;
+    border-radius: 50%;
+}
+.p2020{
+    color: #AFB5C0;
+    margin-top: 30px;
+}
+.boxazx{
+    width: 100px;
+    height: 100%;
+  
+    padding-top: 20px;
+}
+
+
+.qagr{
+    color: #4F5665;
+    margin-bottom: 10px;
+   
+}
+
+</style>
+</head>
+<body>
+    <div class="warp">
+        <div class="header">
+            <img class="svgl"src="logo1.svg"   alt="logo ">
+            <div class="logo">Lasles VPN</div>
+           
+            <div class="nav">
+                <span>Ablour</span>
+                <span>Features</span>
+                <span>Pricting</span>
+                <span>Tetimonials</span>
+                <span>Help</span>
+            </div>
+            <div class="btns">
+                <button class="signIn">Sign in</button>
+                <button class="signUp">Sign in</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainLeft">
+                <h1>Want anything  to be <br> easy with LAselsVPN</h1>
+                <p>Provide a network for all your needs with ease and fun using LaslesVPN <br> discover interesting features from us.</p>
+                <button class="mainBtn"><a class="au" href="card.html">Get started</a ></button>
+            </div>
+            <div class="mainRight">
+                <img src="img/pep1.png" alt="pep">
+            </div>
+        </div>
+        <div class="stati">
+            <div class="iteam ">
+                <div class="iteamInner ">
+                    <div class="icon p2">
+                        <img class="p3" src="img/cool.svg" alt="p11">
+                       <img class="p15" src="img/peoplecool.svg" alt="p15">
+                   
+                    </div>
+                    <div class="info">
+                        <span class="tt"><b>90+</b> </span>
+                        <span>Users</span>
+                    </div>
+                </div>
+            </div>
+            <div class="iteam">
+                <div class="iteamInner border">
+                    <div class="icon p2" >
+                        <img class="p3" src="img/cool.svg" alt="p22">
+                        <img class= "p16" src="img/locationscool.png" alt="p22">
+                    </div>
+                    <div class="info">
+                        <span class="tt"></span> <b>30+</b> </span>
+                        <span>Locations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="iteam">
+                <div class="iteamInner">
+                    <div class="icon p2">
+                        <img class="p3" src="img/cool.svg" alt="p33">
+                        <img class=" block" src="img/blockcool.png" alt="p33">
+                    </div>
+                    <div class="info">
+                        <span class="tt"> <b>50+</b>  </span>
+                        <span>Servers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="wrap2">
+    <div class="rightq">
+        <div class="photopep">
+           <div class="dddd"> <img class="pep4" src="https://laslesvpn-landing.netlify.app/images/illustration-2.svg" alt="pep"> </div>
+        </div>
+    </div>
+    <div class="leftq">
+        <h2 class="h2">We Provide Many <br> Features You Can Use</h2>
+        
+        <p class="ty">You can explore the features that we provide with fun  and <br> have their own functions each feature.</p>
+        <div class="fffff">
+        <div class="v5">
+            <div class="minibox3">✔</div>
+            <div class="minibox3">✔</div>
+            <div class="minibox3">✔</div>
+            <div class="minibox3">✔</div>
+            
+
+        </div>
+        <div class="head2">
+            <p class="j2 j1">Powerfull online protection.</p>
+            <p class="j2">Internet without borders.</p>
+            <p class="j2">Supercharged VPN</p>
+            <p class="j2 j3">No specific time limits.</p>
+        </div>
+        </div>
+    </div>
+</div>
+  <div class="wrap3">
+
+<h2 class="h2cho">Choose Your Plan</h2>
+<div class="tzu">
+<p class="lets"> Let's choose the package that is best for you and explore it happily and     <br>   cheerfully.   </p> 
+
+</div>
+  </div>
+<div class="wrap4">
+<div class="ticket">
+    <div class="ticketphoto">
+<img class="wow" src="img/wow.png" alt="">
+    </div>
+<div class="free">
+    <h4 class="freep">Free Plan<h4>
+</div>
+<div class="textticket">
+    <div class="textticket1">
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Unlimited Bandwitch</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Encrypted Connection</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">No Traffic Logs</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Works on All Devices</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="freebtn">
+    <h2 class="qqqqqqq">Free</h2>
+</div>
+<div class="btnfreeee">
+    <button class="popw">Select</button>
+</div>
+</div>
+
+<div class="ticket">
+    <div class="ticketphoto">
+<img class="wow" src="img/wow.png" alt="">
+    </div>
+<div class="free">
+    <h4 class="freep">Standard Plan</h4>
+</div>
+<div class="textticket">
+    <div class="textticket1">
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Unlimited Bandwitch</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Encrypted Connection</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">No Traffic Logs</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Works on All Devices</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Connect Anyware</div>
+        </div>
+    </div>
+</div>
+
+<div class="freebtn">
+    <h2 class="qqqqqqq">$9 / mo</h2>
+    
+</div>
+<div class="btnfreeee">
+    <button class="popw">Select</button>
+</div>
+</div>
+
+<div class="ticket1">
+    <div class="ticketphoto">
+<img class="wow" src="img/wow.png" alt="">
+    </div>
+<div class="free">
+    <h4 class="freep">Premium Plan</h4>
+</div>
+<div class="textticket">
+    <div class="textticket1">
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Unlimited Bandwitch</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Encrypted Connection</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">No Traffic Logs</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Works on All Devices</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Connect Anyware</div>
+        </div>
+        <div class="hoi">
+            <div class="uuu">✔</div>
+            <div class="unlimited">Get New Features</div>
+        </div>
+    </div>
+</div>
+
+<div class="freebtn">
+    <h2 class="qqqqqqq">$12 / mo</h2>
+</div>
+<div class="btnfreeee">
+    <button class="popw1">Select</button>
+</div>
+</div>
+</div>
+  
+
+<div class="wrap5">
+    <h2 class="h2cho">Huge Global Network <br> of Fast VPN</h2>
+    <div class="tzu">
+    <p class="lets"> See <b> LaslesVPN </b> everywhere to make it easier for you when you move   <br> locations.  </p> 
+</div>
+</div>
+
+
+<div class="wrap6">
+    <img class="cartw" src="img/cart.png" alt="card">
+</div>
+
+
+<div class="wrap7">
+<img class="logod" src="img/logod.png" alt="logo">
+</div>
+
+
+
+<div class="storr">
+   <h2>Trusted by Thousands of <br> Happy Customer</h2>
+   <p class="these">These are the stories of our customers who have joined us with great <br>  pleasure when using this crazy feature.</p>
+</div>
+
+
+
+
+
+<div class="storr2">
+    <div class="kkk">
+        <div class="cardadad1">
+            <div class="cardTop">
+                <div class="cardTopLeft">
+                    <div class="photot">
+                        <img src="img/cartfpep.svg" alt="">
+                    </div>
+                    <div class="userInfo">
+                        <div class="userName "> <b>Viezh Robert</b></div>
+                        <div class="userName">Warsaw,Poland</div>
+                    </div>
+                </div>
+                <div class="cardTopRight">
+                    <span class="ryt">4.5</span>
+                    <img class="star" src="img/Vector.png" alt="">
+                </div>
+            </div>
+            <div class="cardInfo">
+                “Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.
+            </div>
+        </div>
+    </div>
+    <div class="kkk">
+        <div class="cardadad">
+            <div class="cardTop">
+                <div class="cardTopLeft">
+                    <div class="photot">
+                        <img src="img/pep10.png" alt="">
+                    </div>
+                    <div class="userInfo">
+                        <div class="userName "> <b>Yessica Christy</b></div>
+                        <div class="userName">Shanxi, China</div>
+                    </div>
+                </div>
+                <div class="cardTopRight">
+                    <span class="ryt">4.5</span>
+                    <img class="star" src="img/Vector.png" alt="">
+                </div>
+            </div>
+            <div class="cardInfo">
+                “I like it because I like to travel far and still can connect with high speed.”.
+            </div>
+        </div>
+    </div>
+
+    <div class="kkk">
+        <div class="cardadad">
+            <div class="cardTop">
+                <div class="cardTopLeft">
+                    <div class="photot">
+                        <img src="img/pepople11.png" alt="">
+                    </div>
+                    <div class="userInfo">
+                        <div class="userName "> <b>Kim Young Jou</b></div>
+                        <div class="userName">Seoul, South Korea</div>
+                    </div>
+                </div>
+                <div class="cardTopRight">
+                    <span class="ryt">4.5</span>
+                    <img class="star" src="img/Vector.png" alt="">
+                </div>
+            </div>
+            <div class="cardInfo">
+                “This is very unusual for my business that currently requires a virtual private network that has high security.”.
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<div class="wrap8">
+<div class="leftzu">
+    <div class="boxbox">
+<div class="boxqwe"></div>
+<div class="boxert"></div>
+<div class="boxert"></div>
+<div class="boxert"></div>
+    </div>
+</div>
+<div class="rightzu">
+<div class="boxbox1">
+<button class="btnae">
+    <img src="img/left.png" alt="left">
+</button>
+<button class="btnar">
+    <img src="img/right.png" alt="left">
+</button>
+</div>
+</div>
+</div>
+<div class="wrap9">
+
+    <div class="wrap10">
+        <div class="luffy">
+   <div class="leftluffy">
+<div class="bio">
+    <h2>Subscribe Now for <br> Get Special Features!</h2>
+    <p class="withq">Let's subscribe with us and find the fun.</p>
+</div>
+   </div>
+   <div class="rightluffy">
+<button class="btnqert">Subscribe Now</button>
+   </div>
+
+        </div>
+    </div>
+  
+</div>
+
+
+<div class="wrap11">
+
+<div class="boxwrap11">
+    <div class="headwrap11">
+        <div class="leftheadwrap11">
+         <img src="logo1.svg" alt="logo">
+         <p class="VPNWER">Lasles<b>VPN</b></p>
+        </div>
+        <div class="rightheadwrap11">
+   <p class="ADA"><b> Product </b></p>
+   <p class="ADA"> <b> Engage </b></p>
+   <p class="ADA"><b> Earn Money </b></p>
+        </div>
+    </div>
+
+<div class="body123">
+<div class="leftbody1">
+
+<div class="boxbody123">
+<p> <b> LaslesVPN</b>  is a private virtual network that <br> has unique features and has high security.</p>
+</div>
+<div class="sociable">
+    <div class="boximg">
+
+    </div>
+    <img class="fq" src="img/fasbzk.png" alt="fasbyk">
+    
+    <img class="fas" src="img/twir.png" alt="twit">
+    <img class="fas" src="img/insta.png" alt="">
+</div>
+<p class="p2020">©2020LaslesVPN</p>
+
+</div>
+<div class="rightbody1">
+    <div class="boxazx">
+        <p class="qagr">Download </p>
+        <p class="qagr">Pricing </p>
+        <p class="qagr">Locations </p>
+        <p class="qagr">Server </p>
+        <p class="qagr">Countries </p>
+        <p class="qagr">Blog </p>
+    </div>
+    <div class="boxazx">
+        <p class="qagr">LaslesVPN ?  </p>
+        <p class="qagr">FAQ </p>
+        <p class="qagr">Tutorials </p>
+        <p class="qagr">About Us </p>
+        <p class="qagr">Privacy  </p>
+        <p class="qagr"><p class="qagr">Terms   </p>  </p>
+    </div>
+    <div class="boxazx">
+        <p class="qagr">Affiliate </p>
+        <p class="qagr">Become  </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<body>
+</html>
