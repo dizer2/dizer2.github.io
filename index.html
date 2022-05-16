@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/apple.png">
+    <title>Portfolio</title>
+    <style>
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+.wrap{
+width: 100%;
+height: 100vh;
+background-color: rgb(0, 0, 0);
+
+}
+.head{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex
+}
+.logo{
+    width: 20% ;
+    height: 100%;
+    /* background-color: rgb(5, 50, 255); */
+    display: flex;
+    align-items: center;
+}
+.headtext{
+    width: 60% ;
+    height: 100%;
+    /* background-color: rgb(255, 0, 119); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+.insta{
+    width: 20% ;
+    height: 100%;
+    /* background-color: rgb(60, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.logor{
+    width: 50px;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.headtext a{
+    text-decoration: none;
+    color: #BABABA;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+}
+.riop{
+    display: flex; 
+}
+ 
+.leftbody{
+    width: 50%;
+    height: 85vh;
+    /* background-color: rgb(41, 7, 51); */
+}
+.rightbody{
+    width: 50%;
+    height: 85vh;
+    /* background-color: rgb(252, 13, 33); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.boxleft{
+    width: 600px;
+    height: 500px;
+    /* background-color: aquamarine; */
+    margin-left: 120px;
+    padding-top: 150px;
+}
+.yura{
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffff;
+   
+}
+.front{
+    color: #B8B8B8;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+   margin-top: 25px;
+}
+.about{
+margin-top: 25px;
+width: 300px;
+height: 70px;
+border: none;
+font-family: 'Rubik', sans-serif;
+font-size: 24px;
+color: #ffff;
+border-radius: 14px;
+background: linear-gradient(95.67deg, #FF6725 55.3%, #FFFFFF 83.87%);
+cursor: pointer;
+}
+
+.avae{
+    width: 400px;
+    margin-left: 100px;
+}
+.headtext a:hover{
+    border-bottom: 2px solid  #B8B8B8  ;
+    transition: 0.2s;
+}
+
+
+.animate-charcter{
+
+text-transform: uppercase;
+background-image: linear-gradient(
+ -225deg,
+ #B8B8B8 0%,
+ #B8B8B8 29%,
+ #B8B8B8 67%,
+ rgba(129,230,217,1) 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 10s linear infinite;
+display: inline-block;
+color: #B8B8B8;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+   margin-top: 5px;
+   animation-iteration-count: 2;
+}
+
+@keyframes textclip {
+to {
+ background-position: 200% center;
+}
+}
+
+
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  margin-top: 40px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container{
+    display: inline-block;
+    overflow: hidden;
+    color: #c0dbeb
+}
+.end1, .middle1, .middle2{
+    display: inline-block;
+    overflow:hidden;
+    height: 1.5em;
+}
+.end2{
+    position:absolute;
+    color:#c0dbeb
+}
+.middle1, .middle2{
+    color: #ffffff
+}
+.middle1 {
+    animation: ani1 10s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+    animation-iteration-count: 1;
+}
+.middle2 {
+    animation: ani2 10s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+@keyframes ani1 {
+    0% {
+    max-width: 500px;
+  }
+  
+  25% {
+    max-width: 0;
+  }
+  
+  75% {
+    max-width: 0;
+  }
+  
+  90% {
+    max-width: 500px;
+  }
+  
+  100% {
+    max-width: 500px;
+  }
+}
+
+@keyframes ani2 {
+    0% {
+        max-width: 0;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    50% {
+        max-width: 500px;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    100% {
+        max-width: 0;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="head">
+       <div class="logo">
+           <img class="logor" src="img/logo.png" alt="">
+       </div>
+       <div class="headtext">
+           <a class="home" href="index.html">Home</a>
+           <a class="home" href="Myproject.html">My project</a>
+           <a class="home" href="skills.html">Skills</a>
+
+       </div>
+       <div class="insta">
+           <a href="https://instagram.com/_.yurchik.__?igshid=YmMyMTA2M2Y=">
+           <img src="img/instagram.png" alt="">
+           </a>
+       </div>
+       </div>
+     <div class="riop">
+       <div class="leftbody">
+       <div class="boxleft">
+        <h1 class="start">
+            <span class="end1">Y</span><span class="middle1">ura</span>
+            <span class="middle2"><i class="fas fa-code"></i></span><span class="end2">Tovarnitskiy</span>
+        </h1>
+       <p class="animate-charcter">Front-end developer</p>
+    <a href="About.html">
+        <div class="wrape">
+            <button class="button">About me</button>
+          </div>
+    </a>
+    
+       </div>
+       </div>
+
+       <div class="rightbody">
+     <img class="avae" src="img/ava.png" alt="">
+       </div>
+
+     </div>
+
+</div>
+
+
+
+
+    
+</body>
+</html>
