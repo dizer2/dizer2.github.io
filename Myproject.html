@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/apple.png">
+    <title>Portfolio</title>
+    <style>
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+.wrap{
+width: 100%;
+height: 600vh;
+background-color: rgb(0, 0, 0);
+
+}
+.head{
+    width: 100%;
+    height: 15vh;
+    /* background-color: rgb(255, 255, 255); */
+   
+    display: flex
+    
+}
+.logo{
+    width: 20% ;
+    height: 100%;
+    /* background-color: rgb(5, 50, 255); */
+    display: flex;
+    align-items: center;
+}
+.headtext{
+    width: 60% ;
+    height: 100%;
+    /* background-color: rgb(255, 0, 119); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+.insta{
+    width: 20% ;
+    height: 100%;
+    /* background-color: rgb(60, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.logor{
+    width: 50px;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.headtext a{
+    text-decoration: none;
+    color: #BABABA;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+}
+
+.headtext a:hover{
+    border-bottom: 2px solid  #B8B8B8  ;
+    transition: 0.2s;
+}
+.bodyweb{
+    width: 100%;
+    height: 30vh;
+    /* background-color: blue; */
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webunior{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px ;
+    background-color: #ffff;
+    border-radius: 45px ;
+    border: none;
+    width: 120px;
+    height: 50px;
+    margin: 80px;
+    cursor: pointer;
+}
+.webunior:hover{
+    font-size: 20px ;
+    background-color: #3BB2D8;
+    border-radius: 45px ;
+    border: none;
+    width: 120px;
+    height: 50px;
+    margin: 80px;
+    color: #ffff;
+    cursor: pointer;
+}
+.project{
+    width: 100%;
+    height:55vh;
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 1100px;
+    height: 300px;
+    background-color: #ffff;
+    display: flex;
+    
+  
+}
+.leftcard{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightcard{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+.cardphoto{
+    width: 535px;
+    margin-right: 15px;
+}
+.textcard{
+font-size: 40px;
+font-family: 'Montserrat', sans-serif;
+}
+.textcard1{
+    font-size: 14px;
+  
+}
+.btncard{
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+font-family: 'Montserrat', sans-serif;
+border-radius: 14px;
+margin-top: 70px;
+cursor: pointer;
+}
+.allo{
+    background-color: #3BB2D8;
+    color: #ffff;
+}
+.cardphoto2{
+    width: 540px;
+    margin-right: 15px;
+}
+.Cootles{
+    width: 460px;
+}
+.happy{
+    width: 440px;
+
+}
+.hover{
+    margin-top: 20px;
+}
+.btncard1{
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+font-family: 'Montserrat', sans-serif;
+border-radius: 14px;
+margin-top: 40px;
+cursor: pointer;
+}
+
+
+.container
+{
+  width:600px;
+  display:flex;
+  /* flex-wrap:wrap; */
+  justify-content: space-around;
+  padding-bottom: 20px;
+  
+  
+   
+}
+.container .btn {
+    
+  position:relative;
+  width: 155px;
+  height: 55px;
+  margin:20px;
+}
+
+.container .btn a
+{
+    position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 1;
+  font-size: 400;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+  
+  
+  
+}
+
+.container .btn:hover a
+{
+  letter-spacing: 3px;
+}
+
+.container .btn a::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0.15),
+  transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.container .btn:hover a::before
+{
+  transform: skewX(45deg) translateX(200%);
+}
+.container .btn::before
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width:30px;
+  height:10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .btn:hover::before
+{
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.container .btn::after
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width:30px;
+  height:10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .btn:hover::after
+{
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.container .btn:nth-child(1)::before,
+.container .btn:nth-child(1)::after
+{
+  background: #ff1f71;
+  box-shadow: 0 0 5px #ff1f71,
+  0 0 15px #ff1f71,
+  0 0 30px #ff1f71,
+  0 0 60px #ff1f71;
+}
+
+.container .btn:nth-child(2)::before,
+.container .btn:nth-child(2)::after
+{
+  background: #2bd2ff;
+  box-shadow: 0 0 5px #2bd2ff,
+  0 0 15px #2bd2ff,
+  0 0 30px #2bd2ff,
+  0 0 60px #2bd2ff;
+}
+
+.container .btn:nth-child(3)::before,
+.container .btn:nth-child(3)::after
+{
+  background: #1eff45;
+  box-shadow: 0 0 5px #1eff45,
+  0 0 15px #1eff45,
+  0 0 30px #1eff45,
+  0 0 60px #1eff45;
+}
+
+    </style>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="head">
+       <div class="logo">
+           <img class="logor" src="img/logo.png" alt="">
+       </div>
+       <div class="headtext">
+           <a class="home" href="index.html">Home</a>
+           <a class="home" href="Myproject.html">My project</a>
+           <a class="home" href="skills.html">Skills</a>
+
+       </div>
+       <div class="insta">
+           <a href="https://instagram.com/_.yurchik.__?igshid=YmMyMTA2M2Y=">
+           <img src="img/instagram.png" alt="">
+           </a>
+       </div>
+    
+       </div>
+    <div class="bodyweb">
+        <a href="Myproject.html">
+            <div class="container">
+                <div class="btn"><a href="Myproject.html">All</a></div>  
+                <div class="btn"><a href="Design.html">Design</a></div>  
+                <div class="btn"><a href="web-site.html">web-site</a></div>  
+              </div>
+    </div>
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto2" src="img/cardphoto.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">MODEL X</p>
+<p class="textcard1">Figma-project</p>
+<a target="blank" href="https://www.figma.com/file/koU2dakHIFO3dRi8zOuueh">
+    <button class="btncard">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+
+</div>
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="Cootles" src="img/Cootles.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Cootles</p>
+<p class="textcard1">Figma-project</p>
+<a target="blank" href="https://www.figma.com/file/ZGVrwAx9zomOKNEpEyRoIT">
+    <button class="btncard">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="Cootles" src="img/card.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Card</p>
+<p class="textcard1">Figma-project</p>
+<a target="blank" href="https://www.figma.com/file/e3nu8xV2Zr55ORPvy4Dz8v">
+    <button class="btncard">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="happy" src="img/Happz.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Happy pet</p>
+<p class="textcard1">Figma-project</p>
+<a target="blank" href="https://www.figma.com/file/eC2QouaMKuMBiZ2W4CF9hG">
+    <button class="btncard">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto" src="img/cootryu1.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Cootles</p>
+<p class="textcard1">web-site</p>
+<p class="textcard1 hover"> flex box, bootstrap, hover effects were used</p>
+<a target="blank" href="coot/coot.html">
+    <button class="btncard1">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto" src="img/cardphoto.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Model X</p>
+<p class="textcard1">web-site</p>
+<p class="textcard1 hover"> flex box were used</p>
+<a target="blank" href="Model X/Model.html">
+    <button class="btncard1">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto" src="img/Lanspases9.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Lasles</p>
+<p class="textcard1">Web-site</p>
+<p class="textcard1 hover">hover effects, shadows,  flex box were used</p>
+<a target="blank" href="LainVPNa/LainVPN/index.html">
+    <button class="btncard1">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto" src="img/bag2.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Pelio</p>
+<p class="textcard1">Web-site</p>
+<p class="textcard1 hover">Hover effects, shadows, multi-site  and similar layouts were used</p>
+<a target="blank" href="dash/Dash.html">
+    <button class="btncard1">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto" src="img/vovk.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Vovk.ua</p>
+<p class="textcard1">Web-site</p>
+<p class="textcard1 hover">Hover effects, shadows, multi-site  and similar layouts were used</p>
+<a target="blank" href="volk/index.html">
+    <button class="btncard1">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+
+<div class="project">
+    <div class="card">
+     <div class="leftcard">
+     <img class="cardphoto" src="img/Neetphotos.png" alt="">
+     </div>
+ 
+     <div class="rightcard">
+<p class="textcard">Netbook</p>
+<p class="textcard1">Web-site</p>
+<p class="textcard1 hover">Hover effects, and similar layouts were used</p>
+<a target="blank" href="deff/index.html">
+    <button class="btncard1">Переглянути</button>
+</a>
+
+     </div>
+
+
+    </div>
+</div>
+</div>  
+
+</body>
+</html>
